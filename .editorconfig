@@ -1,0 +1,17 @@
+# http://editorconfig.org
+root = true
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+# EditorConfig и Prettier имеют некоторые общие правила,
+# при этом Prettier может считывать набор базовых правил из .editorconfig,
+# но похоже что только из секции глобальных [*] правил!
+# Оптимальным решением было бы не дублировать правила в .prettierrc.json
+[*]
+charset = utf-8
+end_of_line = crlf
+
+[*.{js,jsx,json,css,less,ts,tsx,scss}]
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
