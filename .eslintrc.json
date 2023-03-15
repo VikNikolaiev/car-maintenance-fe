@@ -2,7 +2,6 @@
     "root": true,
     // Пропускать валидируемый javascript через Babel
     // https://github.com/babel/babel/tree/main/eslint/babel-eslint-parser   
-    
     "env": {
         "browser": true,
         "es2021": true,
@@ -12,18 +11,18 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "airbnb", 
+        "airbnb",
         "airbnb-typescript",
         "prettier"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parser": "@typescript-eslint/parser",
-     
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
-        "project": ["./tsconfig.json"]
+        "project": [
+            "./tsconfig.json"
+        ]
     },
     "plugins": [
         "react",
@@ -31,38 +30,36 @@
         "prettier"
     ],
     "rules": {
-        "quotes": [1, "single"],
+        "quotes": [
+            1,
+            "single"
+        ],
         "useTabs": 0,
-        "indent": [1,"tab"],
         "react/no-danger": 0,
-        "react/jsx-filename-extension": [0],
+        "react/jsx-filename-extension": [
+            0
+        ],
         // Сообщать об ошибках форматирования
         "prettier/prettier": "error",
-
         "react/function-component-definition": [
             2,
             {
-              "namedComponents": "arrow-function",
-              "unnamedComponents": "arrow-function"
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
             }
-          ],
-
+        ],
         // Использовать шаблонные строки вместо конкатенации
         // https://eslint.org/docs/rules/prefer-template
         "prefer-template": "warn",
-
         // Извлекать свойства объектов/массивов через деструкцию
         // https://eslint.org/docs/rules/prefer-destructuring
         "prefer-destructuring": "warn",
-
         // Назначать поля объектов при помощи короткого синтаксиса { x, y, f() {} }
         // https://eslint.org/docs/rules/object-shorthand
         "object-shorthand": "warn",
-
         // Порицать использование функций и переменных до объявления
         // https://eslint.org/docs/rules/no-use-before-define
         "no-use-before-define": "warn",
-
         // Запрещать переопределение параметров функций, но разрешить модификацию параметров-объектов
         // https://eslint.org/docs/rules/no-param-reassign#props
         "no-param-reassign": [
@@ -71,51 +68,39 @@
                 "props": false
             }
         ],
-
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
         // Doesn't work properly for re-exporting default modules
         "import/no-named-as-default": "off",
-
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
         // See issue with nested package.json: https://github.com/benmosher/eslint-plugin-import/issues/458
         "import/no-extraneous-dependencies": "off",
-
         "import/prefer-default-export": "off",
-
         // Не требовать скобки всегда и везде, а только при необходимости
         // https://eslint.org/docs/rules/curly
         "curly": "off",
-
         // Не требовать строгое сравнение, пусть остаётся как выразительный элемент кода,
         // который указывает на особую необходимость строгого сравнения значений
         // https://eslint.org/docs/rules/eqeqeq
         "eqeqeq": "off",
-
         // В конструкции switch не требовать избыточный default: после case:
         // https://eslint.org/docs/rules/default-case
         "default-case": "off",
-
         // Разрешать конструкцию if () ... else return null, это выразительно
         // https://eslint.org/docs/rules/no-else-return
         "no-else-return": "off",
-
         // Порицать использование индекса массива в key
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
         "react/no-array-index-key": "warn",
-
         // Предупреждать о том, что значение свойства не определено по умолчанию
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
         "react/require-default-props": "warn",
-
         // Оставить применение деструкции для передачи свойств на усмотрение разработчика
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
         "react/destructuring-assignment": "off",
-
         // Разрешать обращение к this.state в setState(), потому что это удобно
         // Особые случаи при повторном вызове setState() оставить на ответственность разработчика
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
         "react/no-access-state-in-setstate": "off",
-
         // Позволять пользоваться любыми типами свойств, в т. ч. PropTypes.any и PropTypes.object
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
         "react/forbid-prop-types": [
@@ -126,7 +111,6 @@
                 "checkChildContextTypes": true
             }
         ],
-
         // Задать предпочтительный порядок сортировки методов компонентов
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
         "react/sort-comp": [
@@ -140,19 +124,18 @@
                 ]
             }
         ],
-
         // Разрешить статические свойства в React class components
-        "react/static-property-placement": ["warn", "static public field"],
-
+        "react/static-property-placement": [
+            "warn",
+            "static public field"
+        ],
         // Разрешить "пробрасывание" свойств в компонентах, т. к. это во многих случаях
         // необходимо, особенно для написания stories
         "react/jsx-props-no-spreading": "off",
-
         // Требовать явного назначения кнопке атрибута type
         // Разрешить тип "reset", который почему-то запрещён правилами по умолчанию
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
         // "react/button-has-type": true,
-
         // Требовать связь между label и полем по одному из способов: вложением, или через for={id}
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
         "jsx-a11y/label-has-for": [
@@ -160,16 +143,24 @@
             {
                 "components": [],
                 "required": {
-                    "some": ["nesting", "id"]
+                    "some": [
+                        "nesting",
+                        "id"
+                    ]
                 },
                 "allowChildren": true
             }
         ],
-
-        "jsx-a11y/label-has-associated-control": ["error", {
-            "required": {
-              "some": ["nesting", "id"]
+        "jsx-a11y/label-has-associated-control": [
+            "error",
+            {
+                "required": {
+                    "some": [
+                        "nesting",
+                        "id"
+                    ]
+                }
             }
-          }]
+        ]
     }
 }

@@ -10,7 +10,7 @@ interface Props {
 export const DecodeVinDetails: FC<Props> = ({ decodeVin, currentVinQuery }) => {
     const getVariableValueById = (id: number) => {
         const currentVariable = decodeVin.find(
-            (variable) => variable.VariableId === id
+            (variable) => variable.VariableId === id,
         );
 
         return currentVariable ? currentVariable.Value : '';
@@ -85,9 +85,9 @@ export const DecodeVinDetails: FC<Props> = ({ decodeVin, currentVinQuery }) => {
                             <br />
                             <span className="table-details__value">
                                 {`${getVariableValueById(
-                                    31
+                                    31,
                                 )}, ${getVariableValueById(
-                                    77
+                                    77,
                                 )}, ${getVariableValueById(75)}`}
                             </span>
                         </td>

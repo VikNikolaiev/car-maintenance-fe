@@ -14,5 +14,5 @@ const root = createRoot(container as HTMLElement); // createRoot(container!) if 
 root.render(
     <Router>
         <App />
-    </Router>
+    </Router>,
 );

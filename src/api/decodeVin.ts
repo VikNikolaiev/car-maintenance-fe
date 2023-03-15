@@ -6,6 +6,6 @@ export const getDecodeVin = (vin: string) => {
     console.log(`/vehicles/decodevin/${vin}?format=json`);
 
     return client.get<DecodeVinAnswear>(
-        `/vehicles/decodevin/${vin}?format=json`
+        `/vehicles/decodevin/${vin}?format=json`,
     );
 };

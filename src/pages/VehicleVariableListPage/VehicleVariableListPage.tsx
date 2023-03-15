@@ -24,7 +24,7 @@ export const VehicleVariableListPage: FC<Props> = ({ vehicleVariables }) => (
                         {/* eslint-disable-next-line react/no-danger */}
                         <td
                             dangerouslySetInnerHTML={{
-                                __html: variable.Description
+                                __html: variable.Description,
                             }}
                         />
                     </tr>

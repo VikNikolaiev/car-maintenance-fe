@@ -9,7 +9,7 @@ import './Main.scss';
 
 export const Main: FC = () => {
     const [vehicleVariables, setVehicleVariables] = useState<VehicleVariable[]>(
-        []
+        [],
     );
 
     const loadVehicleVariables = useCallback(async () => {

@@ -22,7 +22,7 @@ function request<T>(
         // We add body and Content-Type only for the requests with data
         options.body = JSON.stringify(data);
         options.headers = {
-            'Content-Type': 'application/json; charset=UTF-8'
+            'Content-Type': 'application/json; charset=UTF-8',
         };
     }
 
@@ -44,5 +44,5 @@ export const client = {
   post: <T>(url: string, data: any) => request<T>(url, 'POST', data),
     // eslint-disable-next-line
   patch: <T>(url: string, data: any) => request<T>(url, 'PATCH', data),
-    delete: (url: string) => request(url, 'DELETE')
+    delete: (url: string) => request(url, 'DELETE'),
 };

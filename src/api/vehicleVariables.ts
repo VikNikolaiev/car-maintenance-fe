@@ -3,5 +3,5 @@ import { VehicleVariableAnswear } from '../types/VehicleVariable';
 
 export const getVehicleVariables = () =>
     client.get<VehicleVariableAnswear>(
-        '/vehicles/getvehiclevariablelist?format=json'
+        '/vehicles/getvehiclevariablelist?format=json',
     );

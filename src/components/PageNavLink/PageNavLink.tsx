@@ -11,7 +11,7 @@ export const PageNavLink: FC<Props> = ({ to, text }) => (
         to={to}
         className={({ isActive }) =>
             classNames('nav__link', {
-                'is-active': isActive
+                'is-active': isActive,
             })
         }
     >
