@@ -33,7 +33,7 @@
     "rules": {
         "quotes": [1, "single"],
         "useTabs": 0,
-        "indent": [4,"tab"],
+        "indent": [1,"tab"],
         "react/no-danger": 0,
         "react/jsx-filename-extension": [0],
         // Сообщать об ошибках форматирования
