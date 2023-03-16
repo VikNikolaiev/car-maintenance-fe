@@ -1,3 +1,5 @@
+@import "../utils/variables";
+
 html {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -16,4 +18,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
+}
+
+a {
+  color: $secondaryColor;
 }

@@ -132,7 +132,7 @@ export const Search: FC<Props> = ({
             <div className="search__box">
                 <form className="search__form" onSubmit={handleSubmit}>
                     <div className="search__label">
-                        Decode Your Vehicle Identification Number
+                        <h1>Decode Your Vehicle Identification Number</h1>
                         <div className="search__field pro-form__frame">
                             <TextInput
                                 className="pro-form__control"
@@ -168,7 +168,12 @@ export const Search: FC<Props> = ({
                                     setWrongVinQuery(false);
                                 }}
                             >
-                                {message}
+                                <div className="modwin__caption">
+                                    Validation error!
+                                </div>
+                                <div className="modwin__sub-caption">
+                                    {message}
+                                </div>
                             </Modal>
                         )}
                     </div>

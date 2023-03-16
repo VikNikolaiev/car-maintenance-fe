@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import './Header.scss';
-import vinDecoderLogo from '../../img/vinDecoderLogo.png';
+import { Logo } from 'src/assets/icons/Logo';
 
 import { PageNavLink } from '../PageNavLink';
 
 export const Header: FC = () => (
     <header className="header">
         <a className="logo" href="/">
-            <img alt="vinDecoder" src={vinDecoderLogo} />
+            <Logo />
         </a>
 
         <nav className="nav">
