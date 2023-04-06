@@ -2,11 +2,11 @@
 
 .header {
   display: flex;
-  justify-content: flex-start;
-  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
   gap: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  min-width: 282px;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -15,6 +15,20 @@
     justify-content: center;
     align-items: center;
   }
+
+  &__title{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+  }
+
+  &__user {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+
 }
 
 .logo {
@@ -24,60 +38,6 @@
   color: $secondaryColor;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  font-weight: 500;
-  font-size: 1em;
-  line-height: .9rem;
-  color: $primaryColor;
-
-  &__list {
-    display: flex;
-    padding: 3px 0 0;
-    list-style: none;
-    text-transform: uppercase;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  &__link {
-    text-decoration: none;
-
-    &:visited {
-      color: $primaryColor;
-    }
-
-    &:hover {
-      color: $secondaryColor;
-      transition: color 0.2s;
-    }
-
-  }
-
-  .is-active {
-    color: $secondaryColor;
-
-    &:visited {
-      color: $secondaryColor;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      height: 4px;
-      width: 100%;
-      position: relative;
-      top: 19px;
-      border-radius: 8px;
-      background-color: $secondaryColor;
-
-      @media screen and (max-width: 700px) {
-        top: 15px;
-      }
-    }
-  }
+.title {
+  margin: auto;
 }

@@ -1,11 +1,5 @@
 .main {
-  margin: auto;
-  text-align: center;
-  padding: 50px 50px;
-  max-width: 1440px;
-  min-width: 282px;
-
-  @media screen and (max-width: 700px) {
-    padding: 20px 10px;
-  }
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
 }

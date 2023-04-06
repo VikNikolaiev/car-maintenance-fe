@@ -1,18 +1,21 @@
 {
   "homepage": ".",
-  "name": "react-typescript-starter-pack",
+  "name": "car-maintenance-fe",
   "version": "0.1.0",
   "engines": {
     "node": "18"
   },
   "dependencies": {
     "@avtopro/button": "^0.9.7-344ab8b.0",
-    "@avtopro/icons": "^0.23.1-344ab8b.0",
+    "@avtopro/icons": "^0.24.0-68cce67.0",
+    "@avtopro/item-card": "^0.1.0-a9a6c89.0",
     "@avtopro/modal": "^0.8.7-344ab8b.0",
+    "@avtopro/number-input": "^0.1.0-cdcabfe.0",
     "@avtopro/preloader": "^0.4.7-344ab8b.0",
     "@avtopro/select": "^0.16.7-344ab8b.0",
+    "@avtopro/slider": "^0.4.7-68cce67.0",
+    "@avtopro/style": "^0.22.8",
     "@avtopro/text-input": "^0.7.7-344ab8b.0",
-    "@avtopro/tooltip": "^0.6.7-344ab8b.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^27.4.1",
@@ -21,6 +24,8 @@
     "@types/react-dom": "^18.0.11",
     "classnames": "^2.3.2",
     "eslint-plugin-prettier": "^4.2.1",
+    "mobx": "^6.9.0",
+    "mobx-react-lite": "^4.0.2",
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

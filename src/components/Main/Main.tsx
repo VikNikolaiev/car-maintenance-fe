@@ -1,58 +1,14 @@
-import React, { FC, useCallback, useEffect, useState } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { HomePage } from '../../pages/HomePage';
-import { VehicleVariableListPage } from '../../pages/VehicleVariableListPage';
-import { VehicleVariablePage } from '../../pages/VehicleVariablePage';
-import { getVehicleVariables } from '../../api/vehicleVariables';
-import { VehicleVariable } from '../../types/VehicleVariable';
+import React, { FC } from 'react';
+import { MaintenanceList } from '../MaintenanceList/MaintenanceList';
+import { Toolbar } from '../Toolbar';
 import './Main.scss';
 
+// eslint-disable-next-line arrow-body-style
 export const Main: FC = () => {
-    const [vehicleVariables, setVehicleVariables] = useState<VehicleVariable[]>(
-        [],
-    );
-
-    const loadVehicleVariables = useCallback(async () => {
-        try {
-            const fullVehicleVariables = await getVehicleVariables();
-
-            setVehicleVariables(fullVehicleVariables.Results);
-        } catch {
-            Error('Can`t load vehicle variables');
-        }
-    }, []);
-
-    useEffect(() => {
-        loadVehicleVariables();
-    }, []);
-
     return (
         <main className="main">
-            <Routes>
-                <Route path="/">
-                    <Route index element={<HomePage />} />
-                    <Route path="home" element={<Navigate to="/" replace />} />
-                </Route>
-
-                <Route path="/variables">
-                    <Route
-                        index
-                        element={
-                            <VehicleVariableListPage
-                                vehicleVariables={vehicleVariables}
-                            />
-                        }
-                    />
-                    <Route
-                        path=":idParam"
-                        element={
-                            <VehicleVariablePage
-                                vehicleVariables={vehicleVariables}
-                            />
-                        }
-                    />
-                </Route>
-            </Routes>
+            <Toolbar />
+            <MaintenanceList />
         </main>
     );
 };

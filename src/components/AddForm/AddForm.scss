@@ -1,0 +1,60 @@
+.modwin {
+    &__caption {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__model {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__model-item {
+        width: 48%;
+    }
+
+    &__part {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    &__part {
+        &-group {
+            width: 100%;
+        }
+        &-name {
+            width: 60%;
+        }
+        &-count {
+            width: 3em;
+        }
+
+        &-added {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        &-list {
+            font-size: 0.8rem;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            overflow-y: scroll;
+            height: 150px;
+        }
+        
+        &-item {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+    }
+}

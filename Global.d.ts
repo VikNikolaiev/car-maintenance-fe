@@ -1,6 +1,11 @@
-declare module '@avtopro/button/dist/index';
-declare module '@avtopro/text-input/dist/index';
-declare module '@avtopro/select/dist/index';
-declare module '@avtopro/preloader/dist/index';
-declare module '@avtopro/modal/dist/index';
-declare module '@avtopro/icons/dist/jsx/AddCodeIcon';
+declare module "@avtopro/button/dist/index";
+declare module "@avtopro/text-input/dist/index";
+declare module "@avtopro/select/dist/index";
+declare module "@avtopro/preloader/dist/index";
+declare module "@avtopro/modal/dist/index";
+declare module "@avtopro/icons/dist/jsx/AddCodeIcon";
+declare module "@avtopro/icons/dist/js/PlusIcon";
+declare module "@avtopro/icons/dist/js/AddRashodIcon";
+declare module "@avtopro/slider/dist/index";
+declare module "@avtopro/number-input/dist/index";
+declare module "@avtopro/item-card/dist/index";

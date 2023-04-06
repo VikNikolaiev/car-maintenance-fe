@@ -1,0 +1,21 @@
+.toolbar {
+  margin: auto;
+  max-width: 600px;
+  height: 150px;
+
+    &__options {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    &__filters {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.pro-slider {
+    width: 50%;
+}

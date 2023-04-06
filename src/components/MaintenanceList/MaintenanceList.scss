@@ -1,0 +1,72 @@
+.maintenance-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.itemcard {
+    width: 366px;
+
+    &__title-block {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__sub-title {
+        font-size: 1rem;
+    }
+
+    &__header {
+        white-space: normal;
+    }
+
+    &__controls {
+        justify-content: flex-end;
+        width: 20%;
+        gap: 5px;
+    }
+
+    
+}
+
+
+.maintenance-card {
+    background-color: #d8d8d8;
+    padding: 10px;
+    width: 366px;
+    height: 230px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sub-header {
+        font-size: 1rem;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__parts-list {
+        font-size: 0.8rem;
+        height: 130px;
+        list-style: none;
+        padding: 0 5px 0 0;
+        margin: 0;
+        overflow-y: scroll;
+    }
+
+    &__parts-item {
+        padding-bottom: 5px;
+    }
+}
